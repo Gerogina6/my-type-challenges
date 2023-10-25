@@ -1,4 +1,4 @@
-type TupleToObject<T extends readonly any[]> = {
+type TupleToObject<T extends readonly (string | number | symbol)[]> = {
     [P in T[number]]: P
 }
 
@@ -13,3 +13,7 @@ type TupleToObject<T extends readonly any[]> = {
 
 // 返回一个对象
 // 遍历array T[number]
+
+// https://www.typescriptlang.org/docs/handbook/2/keyof-types.html
+// https://wangdoc.com/typescript/operator
+// https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html#ts-check

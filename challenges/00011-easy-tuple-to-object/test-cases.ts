@@ -8,7 +8,7 @@ const sym1 = Symbol(1)
 const sym2 = Symbol(2)
 const tupleSymbol = [sym1, sym2] as const
 const tupleMix = [1, '2', 3, '4', sym1] as const
-
+// number string symbol
 type cases = [
   Expect<
     Equal<
